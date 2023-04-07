@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>p.227 키프레임</title>
+    <style>
+        div{
+            background-color: rgb(146, 146, 146);
+            height: 200px;
+            width: 200px;
+            margin: 50px;
+            animation: mymove 3s infinite;
+        }
+        @keyframes mymove{
+            0%{
+/*                transform: translateY(200px)*/
+                transform: rotate(90deg);
+            }
+/*
+            25%{
+                transform: translateY(-50px)
+            }
+            75%{
+                transform: translate(200px, -50px)
+            }
+*/
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>실습(20230405)</title>
+<!--    'boder-radius' : '원하는만큼 부여'테두리 둥글게-->
+<style>
+    html,body{
+        height: 100%;
+    }
+    .contaier{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .header{
+        border-radius: 15px;
+        height: 80px;
+        background-color: gainsboro;
+        margin-top: 10px;
+    }
+    .main{
+        display: flex;
+        flex: 1;    
+    }
+    .nav{
+        border-radius: 15px;
+        background-color: burlywood;
+        flex: 1;
+        margin: 10px 10px 10px 0px;
+    }
+    .article{
+        border-radius: 15px;
+        background-color: beige;
+        flex: 3;
+        margin: 10px 0 10px 0;
+    }
+    .footer{
+        border-radius: 15px;
+        height: 80px;
+        background-color: azure;
+        margin-bottom: 10px;
+    }
+    h3{
+        margin: 5px;
+    }
+    table{
+        border-collapse: collapse;
+        text-align: center;
+        margin: 20px
+    }
+    tr,th,td{
+        border: 2px solid black;
+        padding: 5px;
+    }
+    .navin{
+        margin-left: 20px;
+    }
+    </style>
+</head>
+<body>
+   <div class="contaier">
+    <div class="header"><h3>header</h3></div>
+    <div class="main">
+    <div class="nav"><h3>nav</h3>
+    <div class="navin"><a href="#">메인</a></div>
+    <div class="navin"><a href="#">로그인</a></div>
+    <div class="navin"><a href="#">회원가입</a></div>
+    </div>
+    <div class="article"><h3>article</h3>
+    <table>
+        <tr>
+            <th>번호</th>
+            <th>아이디</th>
+            <th>이름</th>
+            <th>연락처</th>
+            <th>이메일</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>아이디1</td>
+            <td>이름1</td>
+            <td>010-8989-0001</td>
+            <td>a1@b.com</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>아이디2</td>
+            <td>이름2</td>
+            <td>010-8989-0002</td>
+            <td>a2@b.com</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>아이디3</td>
+            <td>이름3</td>
+            <td>010-8989-0003</td>
+            <td>a3@b.com</td>
+        </tr>
+    </table>
+    </div>
+    </div>
+    <div class="footer"><h3>footer</h3></div>
+    </div>
+</body>
+</html>

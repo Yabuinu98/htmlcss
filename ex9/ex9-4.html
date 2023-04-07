@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>p.221 크기 줄이기</title>
+<style>
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        .container{
+            border: 4px solid tomato;
+            margin: 50px;
+        }
+        .transformed{
+            background-color: wheat;
+            border-radius: 10px;
+            transition: transform 0.5s ease-in-out;
+        }
+        .transformed:hover {
+/*            transform: scaleX(0.5);*/
+/*            transform: scaleY(0.5);*/
+/*            transform: scaleY(0.5);*/
+/*            transform: scaleY(2);*/
+            transform: scale(0.5, 1.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="transformed">transformed</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>p.202 구조적가상클래스(nth-of-type)</title>
+    <style>
+        p:not(:nth-of-type(even)){
+            color: red;
+        }
+/*
+        'odd/even' : '홀/짝'
+        타입이 아닌 전부를 셈
+        p:nth-child(2n){
+            color: blue;
+        }
+*/
+    </style>
+</head>
+<body>
+    <div>여기는 카운트 세는곳이 아님</div>
+    <p>1 번째 p 태그</p>
+    <p>2 번째 p 태그</p>
+    <div>여기는 카운트 세는곳이 아님</div>
+    <p>3 번째 p 태그</p>
+    <p>4 번째 p 태그</p>
+</body>
+</html>

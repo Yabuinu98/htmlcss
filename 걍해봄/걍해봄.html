@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>걍해봄1</title>
+    <style>
+        .wrap {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .wrap li:nth-child(1) {
+            order: 0;
+        }
+
+        .wrap li:nth-child(2) {
+            order: 1;
+        }
+
+        .wrap li:nth-child(3) {
+            order: 2;
+        }
+
+        .wrap li:nth-child(4) {
+            order: 3;
+        }
+        .wrap li:nth-child(5){
+            order: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="wrap">
+        <li>order0</li>
+        <li>order1</li>
+        <li>order2</li>
+        <li>order3</li>
+        <li>order test</li>
+    </ul>
+</body></html>

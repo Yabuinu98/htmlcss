@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>가상요소선택자20230407</title>
+    <style>
+        body {
+            font-weight: bold;
+        }
+
+        p:first-child {
+            color: blue;
+        }
+
+        p:first-child:after {
+            content: "메피";
+            color: red;
+        }
+
+        p:before {
+            content: "★ "
+        }
+
+        p:nth-child(2) {
+            color: aqua;
+            background-color: brown;
+            display: inline;
+        }
+
+        p:nth-child(3):after {
+            content: " ★";
+        }
+        
+        p:nth-last-child(2):after{
+            content: " 메로나"
+        }
+        
+        p:last-child:after{
+            content: ". 감사합니다.~ ★"
+        }
+        
+    </style>
+</head>
+
+<body>
+    <p>나의사랑</p>
+    <p>나의가족</p>
+    <p>행복미래</p>
+    <p>올 때</p>
+    <p>이제 끝</p>
+</body>
+</html>

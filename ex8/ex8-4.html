@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>p.196 hover(마우스로 상호작용)</title>
+    <style>
+        span:hover {
+            background-color: aqua;
+        }
+
+        .container>div {
+            margin: 5px;
+            background-color: blue;
+            width: 50px;
+            height: 50px
+        }
+
+        .container {
+            border: 2px solid black;
+            display: flex;
+            align-content: space-around;
+            justify-content: space-around;
+            width: 500px;
+            height: 200px;
+            flex-wrap: wrap
+        }
+        .container>div:hover{
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <span>이곳에 마우스를 올려주세요.</span> <br>
+    <span>이곳에 마우스를 올려주세요.</span> <br>
+    <span>이곳에 마우스를 올려주세요.</span> <br>
+    <span>이곳에 마우스를 올려주세요.</span> <br>
+    <span>이곳에 마우스를 올려주세요.</span> <br>
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body></html>

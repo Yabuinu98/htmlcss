@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex 보강(20230405)</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .header {
+            text-align: center;
+            height: 65px;
+            background-color: beige;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .nav {
+            height: 60px;
+            background-color: darkgrey;
+            
+        }
+
+        .main {
+            display: flex;
+            flex: 1;
+        }
+
+        .content {
+            background-color: cornsilk;
+            flex: 1;
+            margin: 10px;
+        }
+
+        .aside {
+            text-align: center;
+            background-color: antiquewhite;
+/*            flex: 1;*/
+            width: 80px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer {
+            height: 65px;
+            background-color: gainsboro;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        h1{
+            margin: 0;
+        }
+        table{
+            border-collapse: collapse;
+            text-align: center;
+            margin: 100px;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKgAAAEsCAMAAABgwwj8AAAAA1BMVEX/4ODnlhijAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+BsYMAAFjd3WkAAAAAElFTkSuQmCC);
+        }
+        tr,td{
+            border: 5px solid black;
+            padding: 20px;
+        }
+        h2{
+            margin-left: 10px;
+        }
+        span{
+            padding-left: 5px;
+        }
+        h5{
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header"><h1>lorem</h1></div>
+        <div class="nav">
+        <h3>
+        <span>
+        <a href="https://www.naver.com">N</a>
+        <a href="https://www.daum.net">D</a>
+        <a href="https://www.google.com">G</a>
+        </span>
+        </h3>
+        </div>
+        <div class="main">
+            <div class="content">
+            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quidem, est optio excepturi eaque molestiae id magni vero corporis maiores sapiente esse veniam exercitationem nesciunt error fugiat unde minus nisi magnam, quis rem nulla iure. Veniam dolore a voluptates, in, numquam enim optio aliquid, officia iure cupiditate illo est quasi vero consectetur accusamus at itaque maiores! Consequuntur praesentium laborum quisquam magnam eius fugit, molestias sapiente dicta. Alias dicta et ex officiis explicabo consectetur nobis, earum quam, id molestias velit molestiae, obcaecati reiciendis inventore ad aut laudantium debitis! Aut veniam laboriosam aliquam nisi nemo in, ea, illo libero deserunt odit obcaecati.</h5>
+            <table>
+                <tr>
+                    <td>월</td>
+                    <td>화</td>
+                    <td>수</td>
+                </tr>
+                <tr>
+                    <td>김천국밥</td>
+                    <td>편의점</td>
+                    <td>백화점</td>
+                </tr>
+                <tr>
+                    <td>7,000원</td>
+                    <td>5,000원</td>
+                    <td>20,000원</td>
+                </tr>
+            </table>
+            </div>
+            <div class="aside">ad광고</div>
+        </div>
+        <div class="footer">
+        <span><a href="#">회사</a>
+        <a href="#">채용</a>
+        <a href="#">이용약관</a>
+        <a href="#">네이버ⓒ</a>
+        NAVER Corp.</span>
+        </div>
+    </div>
+</body></html>

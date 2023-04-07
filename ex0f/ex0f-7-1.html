@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lay-out만들기</title>
+    <style>
+        /*        :root{색지정하기}*/
+        .layout {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 50px 50px 300px 50px;
+        }
+
+        div {
+            margin: 3px;
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 3px;
+            box-shadow: 3px 3px grey;
+            color: red;
+            font-weight: bold;
+        }
+
+        /*        .part에 원랜 색지정해서 넣기*/
+        .part1 {
+            background-color: mediumpurple;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .part2 {
+            background-color: ghostwhite;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .part3 {
+            background-color: grey;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+
+        .part4 {
+            background-color: beige;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+
+        .part5 {
+            background-color: pink;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+
+        .part6 {
+            background-color: plum;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="part1">Header</div>
+        <div class="part2">Nav</div>
+        <div class="part3">Lside</div>
+        <div class="part4">Main</div>
+        <div class="part5">Rside</div>
+        <div class="part6">Footer</div>
+    </div>
+</body></html>

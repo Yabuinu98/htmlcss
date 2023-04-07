@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>순서 목록(Order List)</title>
+</head>
+<body>
+   <h2><a href="./ex0b-0.html">홈으로</a></h2>
+    <h1>반응형 웹퍼블리싱 학습 순서</h1>
+<!--    ol는 order list(대제목같은 느낌) li는 list(새끼같은 느낌)-->
+<!--   ol에서는 start이지만 원하는 li에서 다시 시작하려면 원하는 li에서 value로 지정한다-->
+<!--    li에 mark나 strong를 쓰려면 li뒤에쓰기-->
+       <ol type="1" start="5">
+        <li>Html</li>
+        <li>CSS
+        <ol type="i">
+            <li value="5">ex1</li>
+            <li>ex2</li>
+            <li>ex3</li>
+        </ol>
+        </li>        
+        <li><strong>Javascript</strong>
+        <ol type="a" start="10">
+        <li><mark>nodejs</mark></li>
+        <li value="20"><u>express</u></li>
+        <li>vuejs</li>
+        <li>V8</li>
+        </ol>
+        </li>
+    </ol>
+</body>
+</html>

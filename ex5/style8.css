@@ -1,0 +1,27 @@
+@media(max-width: 1280px) {
+  body{
+background: url(https://mblogthumb-phinf.pstatic.net/20150424_219/aaaa3707_1429861216584L5yvP_JPEG/beautiful-beach-hd-wallpapers-123%B9%D9%C5%C1%C8%AD%B8%E9_%B0%ED%C8%AD%C1%FA_%BB%E7%C1%F8.jpg?type=w2) no-repeat;
+  }
+  h1{
+    color: white;
+  }
+  span{
+    color: red;
+    font-weight: 600;
+  }
+}
+@media(max-width: 600px) {
+  body{
+background: url(https://i.pinimg.com/originals/74/3d/a0/743da0fbf30be0d7bc81b4da87e921ef.gif) no-repeat;
+  }
+  h1,span{
+    color: white;
+    font-weight: bold;
+  }
+}
+h1{
+  padding: 10px;
+}
+span{
+  padding: 5px;
+}
