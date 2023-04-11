@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>걍해봄5</title>
+    
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%
+        }
+
+        body {
+            background-color: beige;
+            height: 100%;
+            width: 100%;
+        }
+
+        .log-in {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            background-color: bisque;
+            border: 2px solid red;
+            padding: 20px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .submit {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        span{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="log-in">
+        <form action="걍해봄6.html">
+            <span>아이디 : <br>
+                <input type="text" placeholder="아이디를 입력하시오." pattern="[a-zA-Z0-9]{5,10}">
+                <button type="button">중복확인</button>
+            </span> 
+            비밀번호 : <br>
+            <span><input type="password" placeholder="비밀번호를 입력하시오."></span>
+            
+            비밀번호 재확인 : <br>
+            <span><input type="password" placeholder="위와 똑같이 입력하시오."></span>
+            
+            생년월일 : <br>
+            <span><input type="date"></span>
+            
+            본인인증 : <br>
+            <span><input type="text" placeholder="전화번호를 입력하시오.">
+                <button type="button">인증하기</button>
+            </span>
+            <div class="submit">
+                <button type="submit">제출하기</button>
+            </div>
+        </form>
+    </div>
+</body></html>

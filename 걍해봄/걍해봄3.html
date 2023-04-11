@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>걍해봄3</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        .box {
+            height: 100%;
+        }
+
+        .head {
+            background-color: plum;
+            height: 10%;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav {
+            background-color: lightskyblue;
+            height: 10%;
+            display: flex;
+            align-items: center;
+            padding-left: 5px;
+
+        }
+
+        .main {
+            display: flex;
+            flex: 1;
+            height: 70%;
+        }
+
+        .lside {
+            background-color: orangered;
+            width: 20%;
+            float: left;
+        }
+
+        .center {
+            background-color: yellow;
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rside {
+            background-color: pink;
+            width: 20%;
+        }
+
+        .footer {
+            background-color: aquamarine;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        table{
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th,td{
+            border: 2px solid black;
+            padding: 3px;
+        }
+        .footer::after{
+            content: " ★ 1번 수강생 홍길동입니다 ★"
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="head">2023년 4월 11일 첫 테스트 (걍해봄3 ~ 6)</div>
+        <div class="nav">전체적인 레이아웃을 잡고 노랑이에 표넣기</div>
+        <div class="main">
+            <div class="lside">작은메뉴자리</div>
+            <div class="center">
+                <table>
+                    <tr>
+                        <th>요일</th>
+                        <th>월</th>
+                        <th>수</th>
+                        <th>금</th>
+                    </tr>
+                    <tr>
+                        <td>종목</td>
+                        <td>탁구</td>
+                        <td>풋살</td>
+                        <td>수영</td>
+                    </tr>
+                    <tr>
+                        <td>가격</td>
+                        <td>4,000원</td>
+                        <td>8,000원</td>
+                        <td>3,000원</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="rside">보통 광고</div>
+        </div>
+        <div class="footer"><a href="./%EA%B1%8D%ED%95%B4%EB%B4%844.html">🏠</a></div>
+    </div>
+</body></html>
