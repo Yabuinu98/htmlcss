@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>join</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            height: 250px;
+            padding: 10px;
+        }
+
+        div {
+            margin-bottom: 10px;
+        }
+
+        .join {
+            text-align: center;
+        }
+
+        input {
+            float: right;
+        }
+        p{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <form action="#">
+            <div class="join">회원가입</div>
+            <div class="id">아이디
+                <input type="text" required pattern="[a-z0-9]{5,10}">
+            </div>
+            <div class="pword">비밀번호
+                <input type="password">
+            </div>
+            <div class="pwordck">비밀번호확인
+                <input type="password">
+            </div>
+            <div class="birth">생년월일
+                <input type="text">
+            </div>
+            <div class="name">이름
+                <input type="text">
+            </div>
+            <div class="tell">전화번호
+                <input type="text">
+            </div>
+            <div class="button">
+                <a href="./creatied%20account.html"><button type="button">회원가입</button></a>
+                <button type="button">정보수정</button>
+            </div>
+        </form>
+    </div>
+    <p><a href="./main.html">메인으로</a></p>
+</body></html>

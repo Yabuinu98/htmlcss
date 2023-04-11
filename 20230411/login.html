@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <style>
+        form {
+            height: 200px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 10px;
+
+        }
+
+        .log {
+            text-align: center;
+            margin-left: -50px;
+        }
+
+        input[type="text"] {
+            margin-left: 16px;
+        }
+
+        input {
+            margin-bottom: 5px;
+        }
+        p{
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <form action="#">
+            <div class="log">로그인</div>
+            <div class="id">아이디
+                <input type="text" required pattern="[a-z0-9]{5,10}">
+            </div>
+            <div class="pword">비밀번호
+                <input type="password" required>
+            </div>
+            <div class="button">
+                <button type="submit">로그인</button>
+                <button type="button">회원가입</button>
+            </div>
+        </form>
+    </div>
+    <p><a href="./main.html">메인으로</a></p>
+    <p><a href="./join.html">회원가입</a></p>
+</body></html>
